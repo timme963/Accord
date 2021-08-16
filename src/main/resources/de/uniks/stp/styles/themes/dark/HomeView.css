@@ -1,0 +1,87 @@
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+#serverList .scroll-bar:vertical {
+    -fx-scale-x: 0;
+    -fx-padding: -10;
+    -fx-opacity: 0;
+    -fx-border-color: #202225;
+}
+
+#serverList {
+    -fx-border-color: #202225;
+    -fx-background-insets: 0;
+    -fx-background-color: #202225;
+    -fx-padding: 1;
+}
+
+#serverList .list-cell {
+    -fx-border-color: #202225;
+    -fx-background-insets: 0;
+    -fx-background-color: #202225;
+    -fx-padding: 1;
+}
+
+#settingsButton, #logoutButton, #helpButton {
+    -fx-background-color: #ff9999;
+    -fx-background-radius: 80;
+    -fx-text-fill: BLACK;
+}
+
+#settingsButton:hover, #logoutButton:hover, #helpButton:hover {
+    -fx-background-color: #ffbdbd;
+    -fx-background-radius: 80;
+}
+
+#settingsButton:pressed, #logoutButton:pressed, #helpButton:pressed {
+    -fx-background-color: #ff7d7d;
+    -fx-background-radius: 80;
+}
+
+#root {
+    -fx-background-color: #36393f;
+}
+
+#homeViewVBox {
+    -fx-background-color: #202225;
+}
+
+#helpView {
+    -fx-background-color: #36393f;
+    -fx-background-radius: 10 10 10 10
+}
+
+#markdownScrollView .scroll-bar:horizontal .track,
+#markdownScrollView .scroll-bar:vertical .track {
+    -fx-background-color: #2f3136;
+    -fx-border-color: #2f3136;
+    -fx-background-radius: 0em;
+    -fx-border-radius: 2em;
+}
+
+#markdownScrollView .scroll-bar:horizontal .increment-button,
+#markdownScrollView .scroll-bar:horizontal .decrement-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0em;
+    -fx-padding: 0 0 10 0;
+}
+
+#markdownScrollView .scroll-bar:vertical .increment-button,
+#markdownScrollView .scroll-bar:vertical .decrement-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0em;
+    -fx-padding: 0 10 0 0;
+}
+
+#markdownScrollView .scroll-bar .increment-arrow,
+#markdownScrollView .scroll-bar .decrement-arrow {
+    -fx-padding: 0;
+}
+
+#markdownScrollView .scroll-bar:horizontal .thumb,
+#markdownScrollView .scroll-bar:vertical .thumb {
+    -fx-background-color: #626262;
+    -fx-background-insets: 2, 0, 0;
+    -fx-background-radius: 2em;
+}

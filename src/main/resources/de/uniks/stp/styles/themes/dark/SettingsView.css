@@ -1,0 +1,297 @@
+@import url("accord_scrollbar.css");
+
+.root {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 24, 0, 0, 0);
+    -fx-background-insets: 24;
+    -fx-padding: 24;
+}
+
+/* View Style */
+#settingsContainer {
+    -fx-background-color: #36393f;
+}
+
+#settingsItems {
+    -fx-background-color: #2f3136;
+}
+
+/* Every button */
+.settingsButton {
+    -fx-background-color: #2f3136;
+    -fx-text-fill: WHITE;
+    -fx-font-size: 14px;
+    -fx-alignment: center-left;
+    -fx-background-radius: 0;
+}
+
+.settingsButton:hover {
+    -fx-background-color: #ffbdbd;
+    -fx-text-fill: BLACK;
+}
+
+.settingsButton:focused {
+    -fx-background-color: #ff9999;
+    -fx-text-fill: BLACK;
+}
+
+/* General */
+#darkMode, #brightMode {
+    -fx-border-width: 3;
+    -fx-border-color: transparent;
+    -fx-border-radius: 5;
+}
+
+#darkMode:hover, #brightMode:hover {
+    -fx-border-width: 3px;
+    -fx-border-color: #ffbdbd;
+    -fx-border-radius: 5px;
+}
+
+/* Notification */
+#add {
+    -fx-background-color: #ff9999;
+    -fx-background-radius: 10;
+    -fx-border-color: transparent;
+    -fx-font-size: 12px;
+    -fx-text-fill: BLACK;
+}
+
+#delete {
+    -fx-background-color: #ff9999;
+    -fx-background-radius: 10;
+    -fx-text-fill: RED;
+    -fx-border-color: transparent;
+    -fx-font-size: 12px;
+    -fx-text-fill: BLACK;
+}
+
+#add:hover, #delete:hover {
+    -fx-background-color: #ffbdbd;
+}
+
+#add:pressed, #delete:pressed {
+    -fx-background-color: #ff7d7d;
+}
+
+#volume .thumb {
+    -fx-background-color: #ff9999;
+    -fx-pref-height: 20px;
+    -fx-pref-width: 20px;
+    -fx-background-radius: 100;
+    -fx-font-size: 14px;
+    -fx-text-fill: BLACK;
+}
+
+#volume .thumb:hover {
+    -fx-background-color: #ffbdbd;
+}
+
+#volume .thumb:pressed {
+    -fx-background-color: #ff7d7d;
+}
+
+/* Connection */
+#spotifyVbox {
+    -fx-background-color: #2f3136;
+    -fx-border-color: #36393f;
+}
+
+#steamVbox {
+    -fx-background-color: #2f3136;
+    -fx-border-color: #36393f;
+}
+
+#disconnectSteam {
+    -fx-background-color: #ffbdbd;
+    -fx-text-fill: BLACK;
+}
+
+.buttonOn {
+    -fx-background-color: #ff9999;
+}
+
+.buttonOff {
+    -fx-background-color: #ff9999;
+}
+
+.backgroundOn {
+    -fx-fill: #facbcb;
+}
+
+.backgroundOff {
+    -fx-fill: #ced5da;
+}
+
+/* Audio Settings */
+#button_audioStart, #button_unblock {
+    -fx-background-color: #ff9999;
+    -fx-background-radius: 10;
+    -fx-border-color: transparent;
+    -fx-font-size: 12px;
+    -fx-text-fill: BLACK;
+}
+
+#button_audioStart:hover, #button_unblock:hover {
+    -fx-background-color: #ffbdbd;
+}
+
+#button_audioStart:pressed, #button_unblock:pressed {
+    -fx-background-color: #ff7d7d;
+}
+
+#slider_volumeInput .thumb, #slider_volumeOutput .thumb {
+    -fx-background-color: #ff9999;
+    -fx-pref-height: 30px;
+    -fx-pref-width: 30px;
+    -fx-background-radius: 100;
+    -fx-font-size: 14px;
+    -fx-text-fill: BLACK;
+}
+
+#slider_volumeInput .thumb:hover, #slider_volumeOutput .thumb:hover {
+    -fx-background-color: #ffbdbd;
+}
+
+#slider_volumeInput .thumb:pressed, #slider_volumeOutput .thumb:pressed {
+    -fx-background-color: #ff7d7d;
+}
+
+/* Blocked */
+#blockedUsersLV {
+    -fx-background-color: #36393f;
+    -fx-border-color: white;
+}
+
+#progressBar_microphone {
+    -fx-border-color: #ff9999;
+    -fx-background-color: #ff9999;
+}
+
+#blockedUsersLV .scroll-bar:horizontal {
+    -fx-scale-x: 0;
+    -fx-padding: -10;
+    -fx-opacity: 0;
+    -fx-border-color: #2f3136;
+}
+
+.progress-bar {
+    -fx-background-color: #ff9999;
+    -fx-background-radius: 5;
+}
+
+
+#progressBar_microphone_low .bar {
+    -fx-background-color: linear-gradient(from 70% 70% to 100% 100%, yellow, green);
+}
+
+#progressBar_microphone_medium .bar {
+    -fx-background-color: linear-gradient(from 40% 40% to 100% 100%, yellow, green);
+}
+
+#progressBar_microphone_high .bar {
+    -fx-background-color: linear-gradient(to right, yellow 40%, green 70%, red 100%);
+}
+
+.blockedUserElement {
+    -fx-background-color: #2f3136;
+    -fx-text-fill: WHITE;
+    -fx-alignment: center;
+    -fx-border-radius: 2;
+    -fx-border-color: #000000;
+    -fx-font-size: 18;
+    -fx-padding: 0 0 0 0;
+}
+
+.blockedUserElement:hover {
+    -fx-background-color: #595959;
+}
+
+.blockedUserElementSelected, .blockedUserElementSelected:hover {
+    -fx-background-color: #AAAAAA;
+}
+
+/* JavaFx Classes */
+.check-box {
+    -fx-text-fill: WHITE;
+    -fx-border-radius: 3;
+}
+
+.label {
+    -fx-text-fill: WHITE;
+}
+
+.list-view .list-cell:even {
+    -fx-background-color: #2f3136;
+    -fx-text-fill: WHITE;
+}
+
+.list-view .list-cell:odd {
+    -fx-background-color: #2f3136;
+    -fx-text-fill: WHITE;
+}
+
+.combo-box {
+    /*-fx-background-image: url('image.jpg');*/
+    -fx-background-color: white;
+    -fx-background-radius: 7;
+}
+
+.combo-box-base > .arrow-button {
+    -fx-background-color: #ff9999;
+    -fx-padding: 0 8;
+    -fx-background-radius: 0 7 7 0;
+}
+
+.combo-box-base > .arrow-button > .arrow {
+    -fx-background-color: white;
+    -fx-background-insets: 0 0 0 0;
+    -fx-padding: 6 8;
+    -fx-border-radius: 10;
+    /*-fx-shape: "M 0 0 H 7 L 3.5 4 z";*/
+}
+
+.combo-box-popup .list-view .list-cell {
+    -fx-background-color: WHITE;
+    -fx-text-fill: BLACK;
+    -fx-font-size: 12.5;
+}
+
+.combo-box-popup .list-view .list-cell:hover {
+    -fx-background-color: #AAAAAA;
+}
+
+#blockedUsersLV .list-cell {
+    -fx-padding: 0;
+}
+
+#disconnectSpotify {
+    -fx-background-color: #ff9999;
+    -fx-background-radius: 80;
+    -fx-border-color: transparent;
+    -fx-font-size: 12px;
+    -fx-text-fill: BLACK;
+}
+
+#disconnectSpotify:hover {
+    -fx-background-color: #ffbdbd;
+}
+
+#disconnectSpotify:pressed {
+    -fx-background-color: #ff7d7d;
+}
+
+#disconnectSteam {
+    -fx-background-color: #ff9999;
+    -fx-background-radius: 80;
+    -fx-border-color: transparent;
+    -fx-font-size: 12px;
+    -fx-text-fill: BLACK;
+}
+
+#disconnectSteam:hover {
+    -fx-background-color: #ffbdbd;
+}
+
+#disconnectSteam:pressed {
+    -fx-background-color: #ff7d7d;
+}

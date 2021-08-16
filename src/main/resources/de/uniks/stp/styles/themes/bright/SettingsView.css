@@ -1,0 +1,282 @@
+@import url("accord_scrollbar.css");
+
+.root {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 24, 0, 0, 0);
+    -fx-background-insets: 24;
+    -fx-padding: 24;
+}
+
+/* View Style */
+#settingsContainer {
+    -fx-background-color: #e3e5e8;
+}
+
+#settingsItems {
+    -fx-background-color: #f2f3f5;
+}
+
+/* Every button */
+.settingsButton {
+    -fx-background-color: #f2f3f5;
+    -fx-text-fill: BLACK;
+    -fx-font-size: 14px;
+    -fx-alignment: center-left;
+    -fx-background-radius: 0;
+}
+
+.settingsButton:hover {
+    -fx-background-color: #a0bade;
+    -fx-text-fill: WHITE;
+}
+
+.settingsButton:focused {
+    -fx-background-color: #7da6df;
+    -fx-text-fill: WHITE;
+}
+
+/* General */
+#darkMode, #brightMode {
+    -fx-border-width: 3;
+    -fx-border-color: transparent;
+    -fx-border-radius: 5;
+}
+
+#darkMode:hover, #brightMode:hover {
+    -fx-border-width: 3px;
+    -fx-border-color: #7da6df;
+    -fx-border-radius: 5px;
+}
+
+/* Notification */
+#add {
+    -fx-background-color: #7da6df;
+    -fx-background-radius: 10;
+    -fx-border-color: transparent;
+    -fx-font-size: 12px;
+    -fx-text-fill: WHITE;
+}
+
+#delete {
+    -fx-background-color: #7da6df;
+    -fx-background-radius: 10;
+    -fx-text-fill: RED;
+    -fx-border-color: transparent;
+    -fx-font-size: 12px;
+    -fx-text-fill: WHITE;
+}
+
+#add:hover, #delete:hover {
+    -fx-background-color: #a0bade;
+}
+
+#add:pressed, #delete:pressed {
+    -fx-background-color: #6899de;
+}
+
+#volume .thumb {
+    -fx-background-color: #7da6df;
+    -fx-pref-height: 20px;
+    -fx-pref-width: 20px;
+    -fx-background-radius: 100;
+    -fx-font-size: 14px;
+    -fx-text-fill: WHITE;
+}
+
+#volume .thumb:hover {
+    -fx-background-color: #a0bade;
+}
+
+#volume .thumb:pressed {
+    -fx-background-color: #6899de;
+}
+
+/* Connection */
+#spotifyVbox {
+    -fx-background-color: WHITE;
+    -fx-border-color: #AAAAAA;
+}
+
+#steamVbox {
+    -fx-background-color: WHITE;
+    -fx-border-color: #AAAAAA;
+}
+
+.buttonOn {
+    -fx-background-color: #7da6df;
+}
+
+.buttonOff {
+    -fx-background-color: #7da6df;
+}
+
+.backgroundOn {
+    -fx-fill: #a6c1de;
+}
+
+.backgroundOff {
+    -fx-fill: #ced5da;
+}
+
+/* Audio Settings */
+#button_audioStart, #button_unblock {
+    -fx-background-color: #7da6df;
+    -fx-background-radius: 10;
+    -fx-border-color: transparent;
+    -fx-font-size: 12px;
+    -fx-text-fill: WHITE;
+}
+
+#button_audioStart:hover, #button_unblock:hover {
+    -fx-background-color: #a0bade;
+}
+
+#button_audioStart:pressed, #button_unblock:pressed {
+    -fx-background-color: #6899de;
+}
+
+#slider_volumeInput .thumb, #slider_volumeOutput .thumb {
+    -fx-background-color: #7da6df;
+    -fx-pref-height: 30px;
+    -fx-pref-width: 30px;
+    -fx-background-radius: 100;
+    -fx-font-size: 14px;
+    -fx-text-fill: WHITE;
+}
+
+#slider_volumeInput .thumb:hover, #slider_volumeOutput .thumb:hover {
+    -fx-background-color: #a0bade;
+}
+
+#slider_volumeInput .thumb:pressed, #slider_volumeOutput .thumb:pressed {
+    -fx-background-color: #6899de;
+}
+
+/* Blocked */
+#blockedUsersLV {
+    -fx-background-color: #e3e5e8;
+    -fx-border-color: white;
+}
+
+#blockedUsersLV .scroll-bar:horizontal {
+    -fx-scale-x: 0;
+    -fx-padding: -10;
+    -fx-opacity: 0;
+    -fx-border-color: #2f3136;
+}
+
+#progressBar_microphone {
+    -fx-background-color: linear-gradient(to right, yellow 40%, green 70%, red 100%);
+}
+
+.progress-bar {
+    -fx-background-color: #6899de;
+}
+
+#progressBar_microphone_low .bar {
+    -fx-background-color: linear-gradient(from 70% 70% to 100% 100%, yellow, green);
+}
+
+#progressBar_microphone_medium .bar {
+    -fx-background-color: linear-gradient(from 40% 40% to 100% 100%, yellow, green);
+}
+
+#progressBar_microphone_high .bar {
+    -fx-background-color: linear-gradient(to right, yellow 40%, green 70%, red 100%);
+}
+
+.blockedUserElement {
+    -fx-background-color: #f2f3f5;
+    -fx-text-fill: BLACK;
+    -fx-alignment: center;
+    -fx-border-radius: 2;
+    -fx-border-color: #e3e5e8;
+    -fx-font-size: 18;
+    -fx-padding: 0 0 0 0;
+}
+
+.blockedUserElement:hover {
+    -fx-background-color: #CCCCCC;
+}
+
+.blockedUserElementSelected, .blockedUserElementSelected:hover {
+    -fx-background-color: #AAAAAA;
+}
+
+
+/* JavaFx Classes */
+.check-box {
+    -fx-text-fill: BLACK;
+    -fx-border-radius: 3;
+}
+
+.label {
+    -fx-text-fill: BLACK;
+}
+
+.list-view .list-cell:even {
+    -fx-background-color: #f2f3f5;
+    -fx-text-fill: BLACK;
+}
+
+.list-view .list-cell:odd {
+    -fx-background-color: #f2f3f5;
+    -fx-text-fill: BLACK;
+}
+
+.combo-box {
+    /*-fx-background-image: url('image.jpg');*/
+    -fx-background-color: white;
+    -fx-background-radius: 7;
+}
+
+.combo-box-base > .arrow-button {
+    -fx-background-color: #7da6df;
+    -fx-padding: 0 8;
+    -fx-background-radius: 0 7 7 0;
+}
+
+.combo-box-base > .arrow-button > .arrow {
+    -fx-background-color: white;
+    -fx-background-insets: 0 0 0 0;
+    -fx-padding: 6 8;
+    /*-fx-shape: "M 0 0 H 7 L 3.5 4 z";*/
+}
+
+.combo-box-popup .list-view .list-cell {
+    -fx-background-color: WHITE;
+    -fx-text-fill: BLACK;
+    -fx-font-size: 12.5;
+}
+
+.combo-box-popup .list-view .list-cell:hover {
+    -fx-background-color: #AAAAAA;
+}
+
+#blockedUsersLV .list-cell {
+    -fx-padding: 0;
+}
+
+/* Notification */
+#disconnectSteam {
+    -fx-background-color: #7da6df;
+    -fx-background-radius: 10;
+    -fx-border-color: transparent;
+    -fx-font-size: 12px;
+    -fx-text-fill: WHITE;
+}
+
+#disconnectSpotify {
+    -fx-background-color: #7da6df;
+    -fx-background-radius: 10;
+    -fx-border-color: transparent;
+    -fx-font-size: 12px;
+    -fx-text-fill: WHITE;
+}
+
+#disconnectSpotify:hover, #disconnectSteam:hover {
+    -fx-background-color: #a0bade;
+}
+
+#disconnectSpotify:pressed, #disconnectSteam:pressed {
+    -fx-background-color: #6899de;
+}

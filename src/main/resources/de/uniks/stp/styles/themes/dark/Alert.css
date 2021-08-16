@@ -1,0 +1,140 @@
+.AlertStyle {
+    -fx-background-color: #2f3136;
+}
+
+.AlertStyle > *.button-bar > *.container {
+    -fx-background-color: #2f3136;
+
+}
+
+.AlertStyle > *.label.content {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.AlertStyle:header *.header-panel {
+    -fx-background-color: #2f3136;
+}
+
+.AlertStyle:header *.header-panel *.label {
+    -fx-font-size: 18px;
+    -fx-fill: #333333;
+    -fx-text-fill: WHITE;
+    -fx-alignment: TOP_CENTER;
+}
+
+#okButton, #button_cancel {
+    -fx-pref-width: 90px;
+    -fx-background-color: #ff9999;
+    -fx-background-radius: 80;
+    -fx-text-fill: BLACK;
+}
+#okButton:hover, button_cancel:hover {
+    -fx-background-color: #ffbdbd;
+}
+#okButton:pressed, #button_cancel:pressed {
+    -fx-background-color: #ff7d7d;
+}
+
+#errorLabel {
+    -fx-text-fill: WHITE;
+}
+
+#errorVbox {
+    -fx-background-color: #2f3136;
+}
+/* "Everywhere" */
+#warningBox {
+    -fx-background-color: #2f3136;
+}
+
+/* Delete Server */
+#label_deleteServer {
+    -fx-text-fill: WHITE;
+}
+
+#button_delete {
+    -fx-pref-width: 150px;
+    -fx-background-color: #ff3030;
+    -fx-background-radius: 80;
+    -fx-text-fill: WHITE;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+#button_delete:hover {
+    -fx-background-color: #ff4a4a;
+}
+#button_delete:pressed {
+    -fx-background-color: #ff1f1f;
+}
+
+#button_cancel {
+    -fx-pref-width: 100px;
+    -fx-background-color: #ff9999;
+    -fx-background-radius: 80;
+    -fx-font-size: 14px;
+    -fx-text-fill: BLACK;
+}
+#button_cancel:hover {
+    -fx-background-color: #ffbdbd;
+}
+#button_cancel:pressed {
+    -fx-background-color: #ff7d7d;
+}
+
+/* No Connection */
+#label_noConnection {
+    -fx-text-fill: WHITE;
+}
+
+#button_OK {
+    -fx-pref-width: 100px;
+    -fx-background-color: #ff9999;
+    -fx-background-radius: 80;
+    -fx-font-size: 14px;
+    -fx-text-fill: BLACK;
+}
+#button_OK:hover {
+    -fx-background-color: #ffbdbd;
+}
+#button_OK:pressed {
+    -fx-background-color: #ff7d7d;
+}
+
+/* Chat Alert */
+#label_chatAlert {
+    -fx-text-fill: WHITE;
+}
+
+#button_OK {
+    -fx-pref-width: 100px;
+    -fx-background-color: #ff9999;
+    -fx-background-radius: 80;
+    -fx-font-size: 14px;
+    -fx-text-fill: BLACK;
+}
+#button_OK:hover {
+    -fx-background-color: #ffbdbd;
+}
+#button_OK:pressed {
+    -fx-background-color: #ff7d7d;
+}
+
+/* Server Deleted/Left / Change Name */
+#label_info {
+    -fx-text-fill: WHITE;
+}
+
+#button_OK {
+    -fx-pref-width: 100px;
+    -fx-background-color: #ff9999;
+    -fx-background-radius: 80;
+    -fx-font-size: 14px;
+    -fx-text-fill: BLACK;
+}
+#button_OK:hover {
+    -fx-background-color: #ffbdbd;
+}
+#button_OK:pressed {
+    -fx-background-color: #ff7d7d;
+}

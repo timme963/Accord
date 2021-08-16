@@ -1,0 +1,192 @@
+#root {
+    -fx-background-color: WHITE;
+}
+
+#editButton, #deleteEditMessage, #abortButton {
+    -fx-background-color: #7da6df;
+    -fx-background-radius: 80;
+    -fx-text-fill: WHITE;
+}
+
+#editButton:hover, #deleteEditMessage:hover, #abortButton:hover {
+    -fx-background-color: #a0bade;
+}
+
+#editButton:pressed, #deleteEditMessage:pressed, #abortButton:pressed {
+    -fx-background-color: #6899de;
+}
+
+#deleteMsgScroll {
+    -fx-background-color: GREY;
+}
+
+#rootDelete {
+    -fx-background-color: #ededed;
+}
+
+#deleteWarning, #editWarningText {
+    -fx-text-fill: BLACK;
+}
+
+#deleteMsg .color {
+    -fx-text-fill: BLACK;
+    -fx-background-color: BLACK;
+}
+
+#chooseDelete {
+    -fx-background-color: #7da6df;
+    -fx-background-radius: 80;
+}
+
+#chooseDelete:hover {
+    -fx-background-color: #a0bade;
+}
+
+#chooseDelete:pressed {
+    -fx-background-color: #6899de;
+}
+
+#chooseCancel, #abortEditMessage {
+    -fx-background-radius: 80;
+    -fx-background-color: #717177;
+}
+
+#chooseCancel:hover, #abortEditMessage:hover {
+    -fx-background-radius: 80;
+    -fx-background-color: #8b8b94;
+}
+
+#chooseCancel:pressed, #abortEditMessage:pressed {
+    -fx-background-radius: 80;
+    -fx-background-color: #636369;
+}
+
+#messageScrollPane #messageScrollPane {
+    -fx-background-color: WHITE;
+}
+
+#messageScrollPane .scroll-bar:vertical {
+    -fx-scale-x: 0;
+    -fx-padding: -10;
+    -fx-opacity: 0;
+    -fx-border-color: WHITE;
+}
+
+#messageScrollPane .scroll-bar:horizontal {
+    -fx-scale-x: 0;
+    -fx-padding: -10;
+    -fx-opacity: 0;
+    -fx-border-color: WHITE;
+}
+
+#messageScrollPane {
+    -fx-border-color: WHITE;
+    -fx-background-insets: 0;
+    -fx-background-color: WHITE;
+    -fx-padding: 1;
+}
+
+#messageBoxSystem {
+    -fx-background-color: #bc84e0;
+    -fx-background-radius: 0 4 4 4;
+    -fx-padding: 5 5 5 5;
+}
+
+#messageBoxCurrentUser {
+    -fx-background-color: #7da6df;
+    -fx-background-radius: 4 0 4 4;
+    -fx-padding: 5 5 5 5;
+}
+
+#messageBoxOtherUser {
+    -fx-background-color: #d4d4d4;
+    -fx-background-radius: 0 4 4 4;
+    -fx-padding: 5 5 5 5;
+}
+
+.messagePolygonSystem {
+    -fx-fill: #bc84e0;
+}
+.messagePolygonCurrentUser {
+    -fx-fill: #7da6df;
+}
+
+.messagePolygonOther {
+    -fx-fill: #d4d4d4;
+}
+
+#userNameLabel {
+    -fx-text-fill: BLACK;
+    -fx-background-color: WHITE;
+}
+
+#messageBox {
+    -fx-background-color: #f2f3f5;
+}
+
+#emojiButton {
+    -fx-background-color: #f2f3f5;
+}
+
+#messageTextField {
+    -fx-border-color: #7da6df;
+}
+
+#sendButton {
+    -fx-background-color: #7da6df;
+    -fx-background-radius: 80;
+    -fx-text-fill: WHITE;
+}
+
+#sendButton:hover {
+    -fx-background-color: #a0bade;
+}
+
+#sendButton:pressed {
+    -fx-background-color: #6899de;
+}
+
+#messageVBox {
+    -fx-background-color: WHITE;
+}
+
+#playButton {
+    -fx-background-color: #7da6df;
+    -fx-background-radius: 80;
+    -fx-text-fill: WHITE;
+}
+
+#playButton:hover {
+    -fx-background-color: #a0bade;
+}
+
+#playButton:pressed {
+    -fx-background-color: #6899de;
+}
+
+#timeLabel {
+    -fx-text-fill: BLACK;
+}
+
+#playTimeLabel {
+    -fx-text-fill: BLACK;
+}
+
+#volumeLabel {
+    -fx-text-fill: BLACK;
+}
+
+.slider .thumb {
+    -fx-background-color: #7da6df;
+    -fx-pref-height: 16px;
+    -fx-pref-width: 16px;
+    -fx-background-radius: 100;
+}
+
+.slider .thumb:hover {
+    -fx-background-color: #a0bade;
+}
+
+.slider .thumb:pressed {
+    -fx-background-color: #6899de;
+}

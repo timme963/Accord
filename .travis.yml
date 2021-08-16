@@ -1,0 +1,17 @@
+language: java
+jdk:
+  - oraclejdk11
+branches:
+  only:
+    - master
+before_install:
+  - sudo apt-get install ffmpeg
+  - sudo apt install pulseaudio
+  - sleep 10 && pactl set-default-sink '0' && pactl set-default-source '0'
+  - pulseaudio -k
+  - chmod +x ./gradlew
+script:
+  - ./gradlew check
+  - ./gradlew jacocoTestReport
+after_script:
+  - bash <(curl -s https://codecov.io/bash -t "$CODECOV_TOKEN")
